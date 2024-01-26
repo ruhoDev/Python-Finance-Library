@@ -1,4 +1,4 @@
-# Finance - Python
+# Python Finance Library
 
 <table>
 <tr>
@@ -19,13 +19,13 @@
 </tr>
 </table>
 
-纯python实现的金融计算库，目标是提供进行量化交易必要的工具，包括但不限于：定价分析工具、技术分析指标。其中部分实现参考了quantlib。
+A financial calculation library implemented in pure Python, with the goal of providing necessary tools for quantitative trading, including but not limited to: pricing analysis tools and technical analysis indicators. Some of the implementations refer to quantlib.
 ### TODO list
 
-- [x] 增加基于事件长度的窗口函数（Count以及CountUnique）
-- [x] 增加更多的基于时间窗口长度的函数
+- [x] Add window functions based on event length (Count and CountUnique)
+- [x] Add more functions based on time window length
 
-### 依赖
+### Dependencies
 
     coverage
     cython
@@ -35,41 +35,41 @@
     scipy
     six
     
-以及相关的c/c++编译器（例如Linux下的gcc，windows下的visual studio）
+And related c/c++ compilers (such as gcc under Linux, visual studio under windows)
 
-### 安装
+### Installation
 
-1. 从最新源代码安装
+1. Install from latest source code
 
-    首先将代码保存至本地：
+    First save the code locally：
     
-        git clone https://github.com/ChinaQuants/Finance-Python.git (如果你是从github获取)
+        git clone https://github.com/ruhoDev/Python-Finance-Library.git (github repository)
         cd finance-Python
        
-    只需运行如下命令：
+    Just run the following command：
     
         python setpy.py install
     
-    安装之后，可以直先接运行测试：
+    After installation, you can run the test directly：
     
         python PyFin/tests/testSuite.py
         
-2. 从``pypi``安装
+2. Install from ``pypi``
     
-    只需运行如下命令：
+    Just run the following command：
     
         pip install Finance-Python
     
     
-### 开发环境
+### Development Environment
 
-在代码目录下，需要运行如下指令：
+In the code directory, you need to run the following command：
 
     python setup.py build_ext --inplace
 
-### 主要功能
+### The main function
 
-* 可以实现复合运算的指标库，方便的与pandas结合；
-* 基于日历的金融日期计算，包括在不同市场下的节假日安排；
-* 资产组合优化函数（实验阶段，功能有限并且在未来可能会有大幅度修改）；
-* 一些金融产品的定价模型（功能有限）。
+* An indicator library that can implement compound operations and can be easily combined with pandas;
+* Calendar-based financial date calculations, including holiday arrangements in different markets;
+* Portfolio optimization function (experimental stage, limited functionality and may be significantly modified in the future);
+* Pricing models for some financial products (limited functionality).
